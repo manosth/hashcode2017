@@ -12,7 +12,7 @@ Our approach, although very simple, ranked fairly well: our team ranked #170 on 
 The problem PDF is included in the repo, as well as the input files and the output files produced by our code (since one test case, 'kittens.in', takes quite a while to produce an output).
 <br>
 <br>
-Also included some visualizations of how our code performed in each of the test cases, highlighting the connections between the endpoints, the cache servers, and the datacenter, as well as the hit rate of each cache.
+Also included are some visualizations of how our code performed in each of the test cases, highlighting the connections between the endpoints, the cache servers, and the datacenter, as well as the hit rate of each cache.
 
 ## Problem Formulation
 We are given cache servers, users (endpoints), videos, and requests that the users make to watch specific videos. We are also given relations between users and cache servers: which user is connected with which cache servers.
