@@ -70,10 +70,10 @@ for endpoint in endpoints:
     datacenter_latency = endpoint[1]
     endpoint_cache_list = endpoint[2]
     for cache in endpoint_cache_list:
-        cache_name = cache[0]
+        cache_id = cache[0]
         cache_latency = cache[1]
         gain = datacenter_latency - cache_latency
-        caches[cache_name].append((endpoint_id, gain))
+        caches[cache_id].append((endpoint_id, gain))
 
 # We are going to create the list of the requests to the caches. To do that,
 # we are going to go through each of the caches, go through each of the endpoints
@@ -83,8 +83,8 @@ for endpoint in endpoints:
 cache_requests = []
 for cache_id, endpoints in caches.iteritems():
     for endpoint in endpoints:
-        current_endpoint = endpoint[0]
-        endpoint_requests = requests[current_endpoint]
+        endpoint_id = endpoint[0]
+        endpoint_requests = requests[endpoint_id]
         for request in endpoint_requests:
             video_id = request[0]
             number_of_requests = request[1]
